@@ -18,6 +18,11 @@ echo
 echo "Memory Usage:"
 free -h
 
+echo
+echo "Swap Usage:"
+swapon --show
+
+
 echo 
 echo "Disk Usage:"
 df -h

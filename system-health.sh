@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -u
 echo "+--------------------------------------------+"
 echo "|                                            |"
@@ -17,6 +19,11 @@ echo "System Uptime: $(uptime -p)"
 echo
 echo "Memory Usage:"
 free -h
+
+echo
+echo "Swap Usage:"
+swapon --show
+
 
 echo 
 echo "Disk Usage:"
